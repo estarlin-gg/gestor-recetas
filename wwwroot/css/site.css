@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+    
+  }
+}
+
+.card {
+  max-width: 390px;
+  min-width: 390px;
+}
+.receta-container {
+  overflow: scrolls;
+}
+

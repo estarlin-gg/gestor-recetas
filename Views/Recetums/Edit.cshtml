@@ -1,0 +1,62 @@
+﻿@model proyectoFinal.Models.Recetum
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h2>Editar receta</h2>
+<hr />
+<form asp-action="Edit" class="d-flex flex-column gap-2 ">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="form-group ">
+            <label asp-for="NombrePaciente" class="control-label">Nombre</label>
+            <input asp-for="NombrePaciente" class="form-control" />
+            <span asp-validation-for="NombrePaciente" class="text-danger"></span>
+        </div>
+        <div class="form-group ">
+            <label asp-for="ApellidoPaciente" class="control-label">Apellidos</label>
+            <input asp-for="ApellidoPaciente" class="form-control" />
+            <span asp-validation-for="ApellidoPaciente" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="TelefonoPaciente" class="control-label">Telefono</label>
+        <input asp-for="TelefonoPaciente" class="form-control" />
+        <span asp-validation-for="TelefonoPaciente" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DireccionPaciente" class="control-label">Direccion</label>
+        <input asp-for="DireccionPaciente" class="form-control" />
+        <span asp-validation-for="DireccionPaciente" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Fecha" class="control-label">Fecha</label>
+        <input asp-for="Fecha" class="form-control" />
+        <span asp-validation-for="Fecha" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NombreDoctor" class="control-label">Doctor</label>
+        <input asp-for="NombreDoctor" class="form-control" />
+        <span asp-validation-for="NombreDoctor" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Medicamentos" class="control-label"></label>
+        <textarea asp-for="Medicamentos" class="form-control"></textarea>
+        <span asp-validation-for="Medicamentos" class="text-danger"></span>
+    </div>
+    <div class="form-group w-100 ">
+        <input type="submit" value="Guardar" class="btn btn-primary w-100" />
+    </div>
+</form>
+
+
+<div class="w-100 mt-4">
+    <a class="btn btn-warning w-100" asp-action="Index">Regresar</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

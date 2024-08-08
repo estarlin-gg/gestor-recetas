@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - proyectoFinal</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/proyectoFinal.styles.css" asp-append-version="true" />
+</head>
+
+<body class="">
+    <div class="d-flex flex-column flex-lg-row overflow-y-auto vh-100">
+
+        <div class="d-none d-lg-flex flex-column flex-shrink-0 p-3 text-white bg-primary vh-100" style="width: 250px;">
+            <a href="/Recetums" class="mb-1 text-white text-decoration-none">
+                <span class="fs-4">Recetas</span>
+            </a>
+            <hr>
+            <nav class="">
+                <a class="nav-link text-white fs-4" asp-area="" asp-controller="Recetums" asp-action="Index">Lista de
+                    Recetas</a>
+                <a class="nav-link text-white fs-4" asp-area="" asp-controller="Recetums" asp-action="Create">Crear
+                    Receta</a>
+            </nav>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary d-lg-none p-2">
+            <a class="navbar-brand" href="/Recetums">Recetas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Recetums" asp-action="Index">Lista de
+                            Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Recetums" asp-action="Create">Crear Receta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Recetums" asp-action="Create">Buscar Receta</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid overflow-auto overflow-x-hidden mt-4 mt-lg-0">
+            <main role="main" class="p-lg-4  container-lg container-fluid">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
