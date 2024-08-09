@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\proyectoFinal.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\estarlin.gg\\Desktop\\proyectoFinal\\gestor-recetas\\wwwroot\\Image\\logo.png",
+      "PackagePath": "staticwebassets\\Image\\logo.png"
+    },
+    {
       "Id": "C:\\Users\\estarlin.gg\\Desktop\\proyectoFinal\\gestor-recetas\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

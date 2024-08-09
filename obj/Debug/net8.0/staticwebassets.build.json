@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o36BSO1r3jdj4AkphecK+O79xN7UGkDBD9iAo7171jI=",
+  "Hash": "M4hocOtTB92Qc42kZgSwD9dFyAd3CbBUfPPU88nmoPE=",
   "Source": "proyectoFinal",
   "BasePath": "_content/proyectoFinal",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\estarlin.gg\\Desktop\\proyectoFinal\\gestor-recetas\\wwwroot\\Image\\logo.png",
+      "SourceId": "proyectoFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\estarlin.gg\\Desktop\\proyectoFinal\\gestor-recetas\\wwwroot\\",
+      "BasePath": "_content/proyectoFinal",
+      "RelativePath": "Image/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\logo.png"
     },
     {
       "Identity": "C:\\Users\\estarlin.gg\\Desktop\\proyectoFinal\\gestor-recetas\\wwwroot\\js\\site.js",
